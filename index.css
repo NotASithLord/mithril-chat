@@ -1,0 +1,294 @@
+/* style the navbar spacing between messages, add scroll to previous chats
+
+ */
+
+
+:root {
+	--background-colorOne: #10222E;
+	--primary-font-color: white;
+	--font-family: sans-serif;
+}
+
+body {
+	background-color: var(--background-colorOne);
+	height:100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+h1 {
+	color: var(--primary-font-color);
+  	font-family: var(--font-family);
+  	margin: 0 auto;
+  	margin-top: 14px;
+}
+
+h2 {
+	color: var(--primary-font-color);
+  	text-align: center;
+}
+
+h3 {
+	color: var(--primary-font-color);
+	font-size: 1em;
+	text-align: center;
+}
+
+.welcomeMsg {
+	padding-bottom: 108px;
+	padding-top: 108px;
+}
+
+img {
+	border-radius: 15px;
+	float:left;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	max-width: 40px;
+}
+
+input {
+	background-color: var(--background-colorOne);
+	border: 1px solid white;
+	border-radius: 10px;
+	color: var(--primary-font-color);
+	margin-right: 5px;
+	min-height: 22px;
+}
+
+p {
+	display: inline;
+	margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;   
+}
+
+.topnav {
+	background-color: #0089cc;
+	font-family: var(--font-family);
+	min-height: 10vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.topnav a:hover {
+  background-color: var(--background-colorOne);
+  color: black;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.senderNav {
+	float: left;
+	width: 60vw;
+}
+
+.toggleLinks {
+	clear: both;
+	content: "";
+  	display: table;
+  	float: right;
+	list-style-type: none;
+	width: 40vw;
+}
+
+.links {
+	display:none;
+	float: right;
+	list-style-type: none;
+	padding-right: 20px;
+    text-align: left;
+}
+
+.action {
+	color: var(--primary-font-color);
+	font-weight: bold;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 40px;
+    padding: 17px 20px 0 22px;
+    width: 32px;
+}
+
+.hambSpace {
+  	float: right;
+  	width: 40vw;
+}
+
+.bar {
+  	height: 3px;
+  	background-color: white;
+  	margin-bottom: 8px;
+  	border-radius: 5%;
+}
+
+.searchInput {
+	margin-right: 5px;
+	width: 82%;
+	height: 32px;
+}
+
+#searchSubmit {
+	border-radius: 10px;
+	height: 32px;
+}
+
+.currentChat {
+	display: inline-block;
+	font-family: var(--font-family);
+	width: 60vw;
+}
+
+.chatbox {
+	height: 70vh;
+	overflow:scroll;
+}
+
+.chatbox p {
+	display: inline;  
+}
+
+.msgHeader {
+	width: 95%;
+}
+
+.msgHeader p {
+	font-size: 0.8em;
+	/*margin-left: 10px;*/
+    margin-top: 10px; 
+	text-align: left;
+}
+
+.msgHeader .time {
+	margin-left: 56%;
+}
+
+#chatsPane {
+	height: 70vh;
+	overflow-y: scroll;
+	width: 40vw;
+}
+
+#chatsPane h2 {
+	text-align: left;
+}
+
+#chatsPane p{
+	display:inline-block;
+	text-align: left;
+}
+
+#chatsPane span {
+	text-align: right;
+}
+
+.previewWrap {
+	width: 70%;
+}
+
+.unread {
+    position: relative;
+    left: 17em;
+	width: 30%;
+}
+
+.previousChat {
+	background-color: var(--background-colorOne);
+	color: var(--primary-font-color);
+	float: right;
+	font-family: var(--font-family);
+}
+
+.previousSenders {
+	border: 1px solid white;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+.previouSenders p {
+	max-width: 50px;
+}
+
+.previousSenders img {
+    max-width: 40px;
+    height: auto;
+}
+
+.msgWrapper {
+	clear: both;
+	margin: 5px;
+}
+
+.convoWrapper {
+	clear: both;
+}
+
+.msg {
+	border: 1px solid #f7f9fc;
+	border-radius: 15px;
+	color: var(--primary-font-color);
+	max-width: 400px;
+	min-height: 50px;
+	width: 40vw;
+}
+
+.msgContent {
+	margin-top: 10px;
+}
+
+.you {
+	background-color: #5d9670;
+	float: right;
+}
+
+.myMsg {
+	min-height: 52px;
+	height:auto;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.homeMsgArea { /*position the textarea so that it is fixed*/
+	background-color: var(--background-colorOne);
+	border-radius: 15px;
+	color: var(--primary-font-color);
+	font-size: 1em;
+	height: 64px;
+	margin: 0;
+	margin-top: 5px;
+	outline: none;
+	padding: 7px;
+    resize: none;
+    width: 70%;
+}
+
+.homeMsgArea::-webkit-input-placeholder {
+	color: var(--primary-font-color);
+	text-align: center;
+	padding-top: 20px;
+}
+
+.homeAccImg {
+	float: left;
+	max-width: 125px;
+	width: 20%;
+}
+
+.kelly {
+  background-color: #515558;
+}
+
+.john {
+  background-color: #515558;
+}

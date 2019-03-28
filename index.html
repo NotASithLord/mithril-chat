@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>D.chat</title>
+    <script src="mithril.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header>
+		<div class="topnav" id="topnav">
+				<div class="senderNav" id="senderNav">
+				</div>
+				<div class="hambSpace">
+				  	<div id="hamburger" class="hamburger" onclick="toggleMenu()">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<h1>D.chat</h1>
+				</div>
+			<div class="toggleLinks">
+				<ul class="links" id="hamb">
+					<li>
+						<a class="action" href="#home">Home</a>
+					</li>
+					<li>
+	  					<a class="action" href="#newgroup">New Group</a>
+	  				</li>
+	  				<li>
+	 					<a class="action" href="#contacts">Contacts</a>
+	 				</li>
+	 				<li>
+	  					<a class="action" href="#settings">Settings</a>
+	  				</li>
+	  				<li>
+	  				<a class="action" href="#faq">FAQs</a>
+	  				</li>
+	  			</ul>
+			</div>
+		</div>
+	</header>
+    <section class="currentChat" id="currentChat">
+        <div class="chatbox" id="chatbox"></div>
+        <form class="myMsg" action="javascript:submitInput()" />
+        	<div class="accImgWrap">
+   		    	<img class="homeAccImg" src="assets/random.jpeg" />
+   		    </div>
+        	<input autofocus="" class="homeMsgArea" id="userInput" placeholder="Your message here ..."/>      	
+			<div class="sendButton">
+				<input id="sendSubmit" type="submit" value="Submit">
+			</div>
+        </form>
+    </section>
+    <section class= "previousChat" id="previousChat">
+    	<h2>Your conversations</h2>
+    	<form class="searchBar">
+    		<input class="searchInput"> 
+    		<input id="searchSubmit" type="submit" value="submit">
+    	</form>
+      <div id="chatsPane">
+      </div>
+    </section>
+</body>
+
+</html>
